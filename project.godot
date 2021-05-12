@@ -20,6 +20,26 @@ _global_script_classes=[ {
 "path": "res://source/helpers/current_queue.gd"
 }, {
 "base": "Reference",
+"class": "Entity",
+"language": "GDScript",
+"path": "res://source/entities/types.gd"
+}, {
+"base": "Reference",
+"class": "EntityController",
+"language": "GDScript",
+"path": "res://source/entities/controller.gd"
+}, {
+"base": "Reference",
+"class": "Level",
+"language": "GDScript",
+"path": "res://source/world/level.gd"
+}, {
+"base": "EntityController",
+"class": "PlayerController",
+"language": "GDScript",
+"path": "res://source/entities/player.gd"
+}, {
+"base": "Reference",
 "class": "PlayerInput",
 "language": "GDScript",
 "path": "res://source/helpers/player_input.gd"
@@ -37,6 +57,10 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "BaseTask": "",
 "CurrentQueue": "",
+"Entity": "",
+"EntityController": "",
+"Level": "",
+"PlayerController": "",
 "PlayerInput": "",
 "Task": "",
 "TaskQueue": ""
@@ -44,7 +68,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="godot-template"
+config/name="gwj31"
 run/main_scene="res://source/main.tscn"
 config/icon="res://icon.png"
 
@@ -74,7 +98,35 @@ window/size/test_height=720
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "godot_reset" )
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
 [rendering]
 
 quality/2d/use_pixel_snap=true
+environment/default_clear_color=Color( 0.247059, 0.478431, 0.388235, 1 )
 environment/default_environment="res://default_env.tres"
